@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./image/icon.png">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div id="mask" class="mask">
+        <svg>
+            <circle cx="50" cy="50" r="40" />
+        </svg>
+    </div>
+    <header class="h" id="h">
+        <div class="con">
+            <div class="head-link">
+                <a href="./index.html"><svg href="./index.html" height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg></a>
+                <a href="./map.html">Магазин</a>
+                <a href="">Mac</a>
+                <a href="">iPad</a>
+                <a href="./iPhone.html">iPhone</a>
+                <a href="">Watch</a>
+                <a href="">Vision</a>
+                <a href="">AirPods</a>
+                <a href="">TV & Home</a>
+                <a href="">Развлечения</a>
+                <a href="">Аксессуары</a>
+                <a href="">Поддержка</a>
+                <svg id="sh" onclick="show();" xmlns="http://www.w3.org/2000/svg" width="15px" height="44px"
+                    viewBox="0 0 15 44">
+                    <path
+                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                    </path>
+                </svg>
+                <svg id="cl" onclick="clos();" xmlns="http://www.w3.org/2000/svg" width="15px" height="44px"
+                    viewBox="0 0 15 44">
+                    <path
+                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                    </path>
+                </svg>
+                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                    </path>
+                </svg>
+            </div>
+            <div class="modal" id="myMadal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="64px" viewBox="0 0 15 44">
+                    <path
+                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                    </path>
+                </svg>
+                <input id="input" placeholder="Поиск apple.com" aria-label="Search apple.com" autocorrect="off"
+                    autocapitalize="off" autocomplete="off" class="globalnav-searchfield-input">
+                <button onclick="search()">Найти</button>
+            </div>
+        </div>
+    </header>
+    <header id="he" class="dark">
+        <div class="con">
+            <div class="head-link">
+                <a href="./index.html"><svg href="./index.html" height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path></svg></a>
+                <div class="head-grup">
+                    <svg id="sh" onclick="show();" xmlns="http://www.w3.org/2000/svg" width="15px" height="44px"
+                        viewBox="0 0 15 44">
+                        <path
+                            d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                        </path>
+                    </svg>
+                    <svg id="cl" onclick="clos();" xmlns="http://www.w3.org/2000/svg" width="15px" height="44px"
+                        viewBox="0 0 15 44">
+                        <path
+                            d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                        </path>
+                    </svg>
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                        </path>
+                    </svg>
+                    <svg id="sho" onclick="showmarket();" width="18" height="18" viewBox="0 0 18 18">
+                        <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+                        </polyline>
+                        <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                            <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15">
+                            </animate>
+                            <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5">
+                            </animate>
+                        </polyline>
+                    </svg>
+                    <svg id="clo" onclick="closemarket();" width="18" height="18" viewBox="0 0 18 18">
+                        <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+                            <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+                        </polyline>
+                        <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor"
+                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5"
+                            class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                            <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15">
+                            </animate>
+                            <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="itemes dark" id="items">
+                <a href="./map.html">Магазин</a>
+                <br><br>
+                <a href="">Mac</a>
+                <br><br>
+                <a href="">iPad</a>
+                <br><br>
+                <a href="./iPhone.html">iPhone</a>
+                <br><br>
+                <a href="">Watch</a>
+                <br><br>
+                <a href="">Vision</a>
+                <br><br>
+                <a href="">AirPods</a>
+                <br><br>
+                <a href="">TV & Home</a>
+                <br><br>
+                <a href="">Развлечения</a>
+                <br><br>
+                <a href="">Аксессуары</a>
+                <br><br>
+                <a href="">Поддержка</a>
+            </div>
+            <div class="modal" id="myMadal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="64px" viewBox="0 0 15 44">
+                    <path
+                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                    </path>
+                </svg>
+                <input id="input" placeholder="Поиск apple.com" aria-label="Search apple.com" autocorrect="off"
+                    autocapitalize="off" autocomplete="off" class="globalnav-searchfield-input">
+                <button onclick="search()">Найти</button>
+            </div>
+        </div>
+    </header>
+    <section class="sec1" id="s1">
+        <div class="con">
+            <div class="first">
+                <img src="./image/1.jpg" alt="">
+                <h2 id="t">Представляем iPhone 16 Pro и iPhone 16, созданные для Apple Intelligence. Совершенно новые
+                    Apple Watch Series 10 и AirPods 4. Apple Watch Ultra 2 и AirPods Max в новых цветах. А также AirPods
+                    Pro 2 с функцией поддержания слуха, которая появится этой осенью.</h2>
+                <a href="#" class="a">Смотрите мероприятие</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec2" id="s1">
+        <div class="second">
+            <h3 class="sec-h3" id="t">iPhone 16 Pro</h3>
+            <img src="./image/3.png" alt="">
+            <p>Создано для Apple Intelligence - личное, частное, мощное. Управление камерой - простой способ быстрого
+                доступа к инструментам камеры. Потрясающее видео 4K 120 кадров в секунду Dolby Vision. Чип A18 Pro. И
+                огромный скачок во времени автономной работы.</p>
+            <span class="pmin">Предзаказ с 9.13<br>Доступно с 9.20<br>Apple Intelligence появится этой осенью*.</span>
+            <div class="but">
+                <button class="a">Узнать больше</button>
+                <br class="mob">
+                <button class="a">Посмотреть цены</button>
+            </div>
+        </div>
+    </section>
+    <section class="sec3" id="s1">
+        <div class="third">
+            <h3 id="t">iPhone 16</h3>
+            <img class="th-img" src="./image/4.png" alt="">
+            <br>
+            <img class="t-img" src="./image/5.png" alt="">
+            <p>Созданный для Apple Intelligence поможет вам писать, выражать свои мысли и добиваться поставленных целей
+                без особых усилий. Управление камерой - удобный способ быстрого доступа к инструментам камеры. А также
+                специально разработанный чип A18.</p>
+            <span class="pmin-b">Предзаказ с 9.13<br>Доступно с 9.20<br>Apple Intelligence появится этой осенью*.</span>
+            <div class="but">
+                <button class="a-b">Узнать больше</button>
+                <br class="mob">
+                <button class="a-b">Посмотреть цены</button>
+            </div>
+        </div>
+    </section>
+    <section class="sec4" id="s1">
+        <div class="third">
+            <img src="./image/7.png" alt="">
+            <br>
+            <h1 id="t" class="t">Watch series 10</h1>
+            <p class="w1">Тонкая классика.</p>
+            <p class="w2">Available starting 9.20</p>
+            <div class="but">
+                <button class="a-b">Узнать больше</button>
+                <br class="mob">
+                <button class="a-b">Посмотреть цены</button>
+            </div>
+            <img class="watch" src="./image/6.jpg" alt="">
+        </div>
+    </section>
+    <footer id="s">
+        <div class="con-footer">
+            <section class="footer-1">
+                <ul>
+                    <li id="footnote-1"><small>*</small> Apple Intelligence будет доступна в бета-версии на всех моделях
+                        iPhone 16, iPhone 15 Pro и iPhone 15 Pro Max, с Siri и языком устройства, установленным на
+                        английский язык США, в качестве обновления iOS 18 этой осенью. Некоторые функции и
+                        дополнительный язык появятся в течение следующего года.</li>
+                </ul>
+                <ol>
+                    <li id="footnote-2">По сравнению с предыдущим поколением.</li>
+                    <li id="footnote-3">Функция уведомления об апноэ во сне находится на стадии получения разрешения FDA
+                        и, как ожидается, будет доступна в конце этого месяца. Функция будет поддерживаться на часах
+                        Apple Watch Series 9 и более поздних версий и Ultra 2. Она предназначена для обнаружения
+                        признаков умеренного или тяжелого апноэ сна у людей в возрасте 18 лет и старше без диагноза
+                        «апноэ сна».</li>
+                    <li id="footnote-4">Время зарядки от 0-80 % и 0-100 % с помощью входящего в комплект поставки кабеля
+                        Apple Watch Magnetic Fast Charger to USB-C Cable. Тестирование проводилось компанией Apple в
+                        августе 2024 года с использованием предсерийных моделей Apple Watch Series 10 (GPS) и Apple
+                        Watch Series 10 (GPS + Cellular), каждая из которых была сопряжена с iPhone; все устройства
+                        тестировались с предварительным выпуском программного обеспечения, кабелем Apple Watch Magnetic
+                        Fast Charger to USB-C Cable (модель A2515) и адаптером питания Apple 20W USB-C Power Adapter
+                        (модель A2305). Тестирование быстрой зарядки проводилось с разряженными Apple Watch. Время
+                        измерялось с момента появления логотипа Apple при запуске устройства. Время зарядки зависит от
+                        региона, настроек и факторов окружающей среды; фактические результаты могут отличаться.</li>
+                    <li id="footnote-5">На основе карты маршрута и точности определения расстояния в сложных городских
+                        условиях.</li>
+                    <li id="footnote-6">Ожидается, что функции проверки слуха и слухового аппарата будут доступны осенью
+                        2024 года. Функция Hearing Aid находится на стадии получения разрешения FDA. Обе функции будут
+                        поддерживаться на AirPods Pro 2 с последней прошивкой в паре с совместимым iPhone или iPad с iOS
+                        18 или iPadOS 18 и более поздними версиями и предназначены для людей от 18 лет и старше. Функция
+                        Hearing Aid также будет поддерживаться на совместимых компьютерах Mac с macOS Sequoia и более
+                        поздними версиями. Она предназначена для людей с ощущаемой легкой или умеренной потерей слуха.
+                    </li>
+                    <li id="footnote-7">Функция защиты слуха работает с AirPods Pro 2 с последней версией прошивки в
+                        паре с совместимыми iPhone, iPad или Mac с iOS 18, iPadOS 18 или macOS Sequoia и более поздними
+                        версиями. Функция доступна только в США и Канаде. Полное ослабление звука и дополнительную
+                        информацию см. на support.apple.com/120850. Функция защиты слуха не подходит для защиты от очень
+                        громких импульсных звуков, таких как выстрелы, фейерверки или отбойные молотки, а также от
+                        продолжительных звуков громкостью более 110 дБА.</li>
+                </ol>
+            </section>
+            <section class="footer-2">
+                <div class="fo-1">
+                    <div class="fo-2">
+                        <h3>Покупайте и учитесь</h3>
+                        <ul>
+                            <li><a href="#">Магазин</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">AirPods</a></li>
+                            <li><a href="#">TV & Home</a></li>
+                            <li><a href="#">AirTag</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Подарочные карты</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Apple Wallet</h3>
+                        <ul>
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">Apple Card</a></li>
+                            <li><a href="#">Apple Pay</a></li>
+                            <li><a href="#">Apple Cash</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fo-1">
+                    <div class="fo-2">
+                        <h3>Аккаунт</h3>
+                        <ul>
+                            <li><a href="#">Управление идентификатором Apple ID</a></li>
+                            <li><a href="#">Аккаунт Apple Store</a></li>
+                            <li><a href="#">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Развлечения</h3>
+                        <ul>
+                            <li><a href="#">Apple One</a></li>
+                            <li><a href="#">Apple TV+</a></li>
+                            <li><a href="#">Apple Music</a></li>
+                            <li><a href="#">Apple Arcade</a></li>
+                            <li><a href="#">Apple Fitness+</a></li>
+                            <li><a href="#">Apple News+</a></li>
+                            <li><a href="#">Apple Podcasts</a></li>
+                            <li><a href="#">Apple Books</a></li>
+                            <li><a href="#">App Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fo-1">
+                    <div class="fo-2">
+                        <h3>Apple Store</h3>
+                        <ul>
+                            <li><a href="#">Найти магазин</a></li>
+                            <li><a href="#">Genius Bar</a></li>
+                            <li><a href="#">Сегодня в Apple</a></li>
+                            <li><a href="#">Групповое бронирование</a></li>
+                            <li><a href="#">Лагерь Apple</a></li>
+                            <li><a href="#">Apple Store App</a></li>
+                            <li><a href="#">Сертифицированный восстановленный</a></li>
+                            <li><a href="#">Apple Trade In</a></li>
+                            <li><a href="#">Финансирование</a></li>
+                            <li><a href="#">Сделки с носителями в Apple</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Помощь в покупках</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fo-1">
+                    <div class="fo-2">
+                        <h3>Для бизнеса</h3>
+                        <ul>
+                            <li><a href="#">Apple и бизнес</a></li>
+                            <li><a href="#">Shop for Business</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Для образования</h3>
+                        <ul>
+                            <li><a href="#">Apple и образование</a></li>
+                            <li><a href="#">Магазин для K-12</a></li>
+                            <li><a href="#">Магазин для колледжа</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Для здравоохранения</h3>
+                        <ul>
+                            <li><a href="#">Apple в здравоохранении</a></li>
+                            <li><a href="#">Mac в здравоохранении</a></li>
+                            <li><a href="#">Здоровье на Apple Watch</a></li>
+                            <li><a href="#">Медицинские записи на iPhone и iPad</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Для правительства</h3>
+                        <ul>
+                            <li><a href="#">Магазин для правительства</a></li>
+                            <li><a href="#">Магазин для ветеранов и военных</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fo-1">
+                    <div class="fo-2">
+                        <h3>Ценности Apple</h3>
+                        <ul>
+                            <li><a href="#">Доступность</a></li>
+                            <li><a href="#">Образование</a></li>
+                            <li><a href="#">Окружающая среда</a></li>
+                            <li><a href="#">Инклюзивность и разнообразие</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Расовое равенство и справедливость</a></li>
+                            <li><a href="#">Цепочка поставок</a></li>
+                        </ul>
+                    </div>
+                    <div class="fo-2">
+                        <h3>Об Apple</h3>
+                        <ul>
+                            <li><a href="#">Отдел новостей</a></li>
+                            <li><a href="#">Лидерство Apple</a></li>
+                            <li><a href="#">Возможности карьерного роста</a></li>
+                            <li><a href="#">Инвесторы</a></li>
+                            <li><a href="#">Этика и соответствие</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Контактная информация Apple</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-3">
+                <div class="fot-1">Больше способов делать покупки: <a href="#"
+                        data-analytics-title="find an apple store">Найти в Apple Store</a> или <a href="#"
+                        data-analytics-title="other retailers or resellers" data-analytics-exit-link="">другой
+                        ритейлер</a> рядом с вами. <span class="nowrap">Или позвоните 1-800-MY-APPLE.</span></div>
+                <div class="fot-2">
+                    <div class="fot-3">Авторское право © 2024 Apple Inc. Все права не защищены.</div>
+                    <ul role="list">
+                        <li role="listitem">
+                            <a class="fot-4" href="#" data-analytics-title="privacy policy">Политика
+                                конфиденциальности</a>
+                        </li>
+                        <li role="listitem">
+                            <a class="fot-4" href="#" data-analytics-title="terms of use">Условия использования</a>
+                        </li>
+                        <li role="listitem">
+                            <a class="fot-4" href="#" data-analytics-title="sales and refunds">Продажи и возвраты</a>
+                        </li>
+                        <li role="listitem">
+                            <a class="fot-4" href="#" data-analytics-title="legal">Юридическая</a>
+                        </li>
+                        <li role="listitem">
+                            <a class="fot-4" href="#" data-analytics-title="site map">Карта сайта</a>
+                        </li>
+                    </ul>
+                    <a href="#">Соединенные Штаты</a>
+                </div>
+            </section>
+            <section class="footer-4">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><img
+                            src="./image/icon/free-icon-youtube-3669688.png" alt=""></button></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><img
+                            src="./image/icon/free-icon-instagram-1384015.png" alt=""></button></a>
+                <br class="mob">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><img
+                            src="./image/icon/free-icon-telegram-5968940.png" alt=""></button></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button><img
+                            src="./image/icon/free-icon-whatsapp-1384007.png" alt=""></button></a>
+            </section>
+        </div>
+    </footer>
+    <section class="but-top" id="buttoooon">
+        <div class="but1">
+            <a href="#s1">
+                <img src="./image/8.png" alt="">
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
